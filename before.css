@@ -1,0 +1,6 @@
+.yellowbracketswide::before {
+    top: 0;
+    left: 0;
+    border-top: 4px solid #ebb94d;
+    border-left: 4px solid #ebb94d;
+}
