@@ -28,6 +28,22 @@ header{
   display:flex;
 }
 
+/* .row{
+  margin-right: -15px;
+  margin-left: -15px;
+} */
+
+.reverse_row {
+  margin-right: 15px;
+  margin-left: 15px; 
+}
+#noflex_row {
+  display:flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .contactpc {
     cursor: pointer;
     position: absolute;
@@ -55,6 +71,10 @@ header{
   display: table;
   width: 100%;
   background-size: cover;
+}
+
+.yellow_txt{
+  color: #ebb94d;
 }
 
 .txtl{
@@ -115,7 +135,17 @@ header{
   box-sizing:border-box;
 }
 
+.president_voice{
+  text-align:left;
+  font-style: italic;
+  color: #777;
+}
 
+.president_voice small{
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: underline;
+}
 
 .introduction{
   text-align:center;
@@ -137,6 +167,10 @@ header{
   text-align:center;
 }
 
+.text_left{
+  text-align: left;
+}
+
 .flex{
   display:flex;
 }
@@ -148,23 +182,27 @@ header{
 .boxitem{
   display:flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content:space-around;
+}
+
+.boxitem img{
+  height:59px;
 }
 .about{
   padding: 0 0 40px 0;
   background-color: #fef5e0;
 }
 
-.aboutbox{
+.about_box{
   background-color:white;
-  max-width: calc(100% - 40px);
+  max-width: 1170px;
   margin:30px auto;
   border:2px solid #ebb94d;
   border-radius: 5px;
 }
 
 .abountSecond{
-  background-image:url(https://isara.life/wp-content/themes/isara_v2/img/aboutsecondbgsp.jpg);
+  background-image:url('https://isara.life/wp-content/themes/isara_v2/img/aboutsecondbgsp.jpg');
 
   background-size: cover;
   background-position: center;
@@ -173,7 +211,10 @@ header{
 }
 
 .sidebox{
-  background-color:white;
+  padding: 30px 30px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 23%;
 }
 
 .step{
@@ -197,13 +238,12 @@ header{
   display:flex;
   padding: 5px;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: center;
 }
 
 .isara_learn img{
-  width:25%;
-  width: 120px;
-  height:130px;
+  width:180px;
+  padding-right:30px;
 }
 
 .learnfromfreelancer {
@@ -229,6 +269,7 @@ header{
 .item_flex{
   display:flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .merit_item{
@@ -243,7 +284,6 @@ header{
 }
 
 .support {
-    width: 1170px;
     max-width: calc(100% - 40px);
     background-color: #fff;
     padding: 40px 20px;
@@ -261,6 +301,10 @@ header{
   color: #fff;
 }
 
+.teacherbox{
+  max-width: 780px;
+}
+
 .teacherbox img{
   position: relative;
   bottom:-35px;
@@ -270,10 +314,16 @@ header{
 .detail {
     padding: 40px;
     border: 3px solid #fff;
+    margin-left: 30px;
 }
 
 .teacher_items {
     /* flex-wrap: wrap; */
+}
+
+.president_img{
+  border: solid;
+  border-color: orange;
 }
 
 .col-xs-4 {
@@ -304,11 +354,21 @@ li{
   list-style: none;
 }
 
+.president_fitem{
+  width:66%;
+  margin:auto;
+}
+
 .learn_wrap{
   background-color:#fff;
   border:2px solid #016ea9;
   padding:0;
   border-radius:5px;
+}
+
+.learn_wrap li{
+  padding: 10px;
+  border-bottom: 1px dotted #e5e5e5;
 }
 
 .learn_wrap ul li {
@@ -465,4 +525,14 @@ li{
 
 .form_control{
   
+}
+
+#page_top{
+  display:none;
+  cursor: pointer;
+  bottom: 90px;
+  right: 50px;
+  background-color: #ececec;
+  position: fixed;
+  padding: 20px;
 }

@@ -38,9 +38,13 @@
 }
 
 @media screen and (min-width: 992px){
+  .col-md-3{
+    width:30%;
+  }
   .col-md-4 {
     width: 33.33333333%;
   }
+  
   .container {
      width: 970px;
   }
@@ -52,6 +56,10 @@
     width:50%;
   }
 
+  .col-md-8{
+    width:66%;
+  }
+
   #learn_box_left{
     margin-right:30px;
   }
@@ -60,6 +68,11 @@
 @media screen and (max-width: 992px){
   #learn_box_right{
     margin-top:30px;
+  }
+
+  .president_fitem{
+    max-width: calc(100% - 40px);
+
   }
 }
 
